@@ -1,5 +1,18 @@
 /* Custom Styles for Portfolio */
 
+/* Global box-sizing and overflow prevention */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
@@ -16,6 +29,33 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(to bottom, #78350f, #92400e);
+}
+
+/* Responsive geometric shapes */
+@media (max-width: 640px) {
+  .geometric-shape.shape-1 {
+    width: 8rem !important;
+    height: 8rem !important;
+  }
+  .geometric-shape.shape-2 {
+    width: 6rem !important;
+    height: 6rem !important;
+  }
+  .geometric-shape.shape-3 {
+    width: 4rem !important;
+    height: 4rem !important;
+  }
+}
+
+/* Responsive toast */
+@media (max-width: 480px) {
+  #toast-container {
+    left: 1rem;
+    right: 1rem;
+  }
+  .toast {
+    max-width: 100%;
+  }
 }
 
 /* Geometric Background Animations */
