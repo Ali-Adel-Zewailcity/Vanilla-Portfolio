@@ -297,6 +297,7 @@ function setupHeader() {
 function setupMobileMenu() {
   var btn = document.getElementById("mobile-menu-btn");
   var menu = document.getElementById("mobile-menu");
+  var header = document.getElementById("header");
   if (!btn || !menu) return;
   
   var isOpen = false;
@@ -304,8 +305,12 @@ function setupMobileMenu() {
     isOpen = !isOpen;
     if (isOpen) {
       menu.classList.add("open");
+      if (header) header.classList.add("header-scrolled");
     } else {
       menu.classList.remove("open");
+      if (header && window.scrollY <= 50) {
+        header.classList.remove("header-scrolled");
+      }
     }
     
     var icon = btn.querySelector("i");

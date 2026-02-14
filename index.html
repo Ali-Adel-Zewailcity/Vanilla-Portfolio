@@ -20,6 +20,9 @@
             colors: {
               maroon: { 600: "#92400e" },
             },
+            screens: {
+              nav: "880px",
+            },
           },
         },
       };
@@ -40,23 +43,25 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body
-    class="font-['Inter'] bg-gradient-to-br from-slate-900 via-stone-900 to-neutral-900 min-h-screen"
+    class="font-['Inter'] bg-gradient-to-b from-slate-900 via-stone-900 to-neutral-900 min-h-screen"
   >
     <!-- Header -->
     <header
       id="header"
       class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent"
     >
-      <nav class="container mx-auto px-4 py-4">
-        <div class="flex items-center justify-between">
-          <div
-            class="text-2xl font-bold text-amber-100 cursor-pointer hover:scale-105 transition-transform"
-          >
-            <span class="text-maroon-600">Ali</span>Adel
-          </div>
+      <nav class="w-full px-4 py-4">
+        <div class="flex items-center justify-between w-full">
+          <a href="#hero">
+            <div
+              class="text-3xl font-bold text-amber-100 cursor-pointer hover:scale-105 transition-transform whitespace-nowrap"
+            >
+              <span class="text-maroon-600">Ali </span>Adel
+            </div>
+          </a>
 
           <!-- Desktop Navigation -->
-          <div class="hidden md:flex items-center space-x-8">
+          <div class="hidden nav:flex items-center space-x-8">
             <a
               href="#about"
               class="nav-link text-amber-100 hover:text-amber-400 transition-colors duration-300 relative group"
@@ -114,13 +119,13 @@
           </div>
 
           <!-- Mobile Menu Button -->
-          <button id="mobile-menu-btn" class="md:hidden text-amber-100 p-2">
+          <button id="mobile-menu-btn" class="nav:hidden text-amber-100 p-2">
             <i data-lucide="menu" class="w-6 h-6"></i>
           </button>
         </div>
 
         <!-- Mobile Navigation -->
-        <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+        <div id="mobile-menu" class="nav:hidden mt-4 pb-4">
           <a
             href="#about"
             class="block py-2 text-amber-100 hover:text-amber-400 transition-colors duration-300"
@@ -285,10 +290,9 @@
           </div>
         </div>
       </div>
-
       <button
         id="scroll-down"
-        class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-amber-400 cursor-pointer animate-bounce"
+        class="absolute bottom-8 inset-x-0 mx-auto w-fit z-20 text-amber-400 cursor-pointer subtle-bounce flex items-center justify-center"
       >
         <i data-lucide="chevron-down" class="w-10 h-10"></i>
       </button>

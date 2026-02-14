@@ -213,3 +213,37 @@
   max-height: 300px;
   opacity: 1;
 }
+
+/* Subtle bounce for scroll-down chevron */
+.subtle-bounce {
+  opacity: 0;
+  animation: arrow-entrance 0.4s ease forwards 0.8s, subtle-bounce 1.5s ease-in-out infinite 1.5s;
+}
+
+@keyframes arrow-entrance {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes subtle-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+#experience-timeline ::selection,
+#skills-grid ::selection,
+#projects-grid ::selection,
+#contact-form ::selection {
+  background-color: #111727;
+}
