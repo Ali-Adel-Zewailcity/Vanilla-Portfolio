@@ -74,7 +74,7 @@ img {
   height: 5px;
   background: #f59e0b;
   border-radius: 50%;
-  box-shadow: 
+  box-shadow:
     0 0 10px #f59e0b,
     0 0 20px #f59e0b,
     0 0 30px rgba(245, 158, 11, 0.6);
@@ -87,7 +87,7 @@ img {
   height: 4px;
   background: #fb923cc6;
   border-radius: 50%;
-  box-shadow: 
+  box-shadow:
     0 0 8px rgba(251, 146, 60, 0.633),
     0 0 12px rgba(251, 146, 60, 0.385);
   animation: node-pulse 2s ease-in-out infinite;
@@ -96,39 +96,39 @@ img {
   
 }
 
-.node-1 { 
+.node-1 {
   transform: translate(-60px, -20px);
-  animation-delay: 0s; 
+  animation-delay: 0s;
 }
-.node-2 { 
+.node-2 {
   transform: translate(0px, -10px);
-  animation-delay: 0.4s; 
+  animation-delay: 0.4s;
 }
-.node-3 { 
+.node-3 {
   transform: translate(40px, 5px);
-  animation-delay: 0.8s; 
+  animation-delay: 0.8s;
 }
-.node-4 { 
+.node-4 {
   transform: translate(-30px, 20px);
-  animation-delay: 1.2s; 
+  animation-delay: 1.2s;
 }
 
 /* Animations */
 @keyframes electron-move {
-  0% { 
+  0% {
     offset-distance: 0%;
     opacity: 0;
     transform: scale(0.5);
   }
-  5% { 
+  5% {
     opacity: 1;
     transform: scale(1);
   }
-  95% { 
+  95% {
     opacity: 1;
     transform: scale(1);
   }
-  100% { 
+  100% {
     offset-distance: 100%;
     opacity: 0;
     transform: scale(0.5);
@@ -140,7 +140,7 @@ img {
     opacity: 0.3;
     filter: drop-shadow(0 0 2px rgba(245, 158, 11, 0.4));
   }
-  50% { 
+  50% {
     opacity: 0.6;
     filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.6));
   }
@@ -151,10 +151,10 @@ img {
     transform: translate(var(--x, 0), var(--y, 0)) scale(1);
     opacity: 0.7;
   }
-  50% { 
+  50% {
     transform: translate(var(--x, 0), var(--y, 0)) scale(1.8);
     opacity: 1;
-    box-shadow: 
+    box-shadow:
       0 0 12px rgba(251, 146, 60, 1),
       0 0 20px rgba(251, 146, 60, 0.6);
   }
@@ -168,16 +168,16 @@ img {
   width: 200%;
   height: 1px;
   background: linear-gradient(90deg, 
-    transparent, 
+    transparent,
     transparent 40%,
-    rgba(245, 158, 11, 0.4) 50%, 
+    rgba(245, 158, 11, 0.4) 50%,
     transparent 60%,
     transparent);
   animation: scan-horizontal 5s linear infinite;
 }
 
 @keyframes scan-horizontal {
-  0% { 
+  0% {
     left: -100%;
   }
   100% {
@@ -429,7 +429,9 @@ img {
 /* Subtle bounce for scroll-down chevron */
 .subtle-bounce {
   opacity: 0;
-  animation: arrow-entrance 0.4s ease forwards 0.8s, subtle-bounce 1.5s ease-in-out infinite 1.5s;
+  animation:
+    arrow-entrance 0.4s ease forwards 0.8s,
+    subtle-bounce 1.5s ease-in-out infinite 1.5s;
 }
 
 @keyframes arrow-entrance {
@@ -455,11 +457,11 @@ img {
 
 input,
 textarea {
-  caret-color: #FABD23;
+  caret-color: #fabd23;
 }
 
 ::selection {
-  background-color: #FABD23;
+  background-color: #fabd23;
   color: #1c1917;
 }
 
@@ -469,7 +471,7 @@ textarea {
 #certificates-grid ::selection,
 #view-projects-button::selection {
   color: #111727;
-  background-color: #FEF3C7
+  background-color: #fef3c7;
 }
 
 /* Waving hand animation */
@@ -503,7 +505,9 @@ textarea {
   }
 }
 
-#portfolio-logo, nav, #Hello-Message {
+#portfolio-logo,
+nav,
+#Hello-Message {
   user-select: none;
   -webkit-user-drag: none;
 }
@@ -511,6 +515,11 @@ textarea {
 /* ==================== CERTIFICATES ==================== */
 
 /* Provider card */
+#certificates-grid > .animate-on-scroll {
+  width: fit-content;
+  max-width: 100%;
+}
+
 .cert-provider-card {
   position: relative;
 }

@@ -336,6 +336,17 @@ function renderCertificatesSection() {
 
   var providers = [
     {
+      name: "ITIDA",
+      logo: "images/ititda.jpeg",
+      certificates: [
+        {
+          title: "InnovEgypt - TIEC - ITIDA",
+          description: "InnovEgypt program certificate by TIEC and ITIDA — innovation and entrepreneurship training program.",
+          image: "images/certificates/ITIDA/InnovEgypt - Tiec - ITIDA Certificate.png"
+        }
+      ]
+    },
+    {
       name: "DataCamp",
       logo: "images/datacamp.jpeg",
       certificates: [
@@ -343,6 +354,33 @@ function renderCertificatesSection() {
           title: "Python Data Associate",
           description: "DataCamp certified Python Data Associate — demonstrating proficiency in data manipulation, analysis, and visualization with Python.",
           image: "images/certificates/DataCamp/Python Data Associate.png"
+        }
+      ]
+    },
+    {
+      name: "HackerRank",
+      logo: "images/hackerrank.svg",
+      certificates: [
+        {
+          title: "Python (Basic) Certificate",
+          description: "HackerRank verified certificate for Python programming fundamentals and problem-solving skills.",
+          image: "images/certificates/HackerRank/python_basic certificate hackerrank.png"
+        }
+      ]
+    },
+    {
+      name: "EYouth",
+      logo: "images/eyouth.png",
+      certificates: [
+        {
+          title: "AI For Content Marketing",
+          description: "EYouth Business certificate for AI-powered content marketing strategies and tools.",
+          image: "images/certificates/EYouth/AI For Content Marketing - Certificate _ EYouth Business.png"
+        },
+        {
+          title: "Digital Marketing Strategy",
+          description: "EYouth Business certificate for digital marketing strategy, planning, and execution.",
+          image: "images/certificates/EYouth/Digital Marketing Strategy - Certificate _ EYouth Business_061735.png"
         }
       ]
     },
@@ -369,44 +407,6 @@ function renderCertificatesSection() {
           title: "Python for Data Science and Machine Learning",
           description: "Udemy course certificate for data science and machine learning using Python, covering Pandas, NumPy, Scikit-learn, and more.",
           image: "images/certificates/Udemy/UC-Python for Data Science and Machine Leaarning.jpeg"
-        }
-      ]
-    },
-    {
-      name: "EYouth",
-      logo: "images/eyouth.png",
-      certificates: [
-        {
-          title: "AI For Content Marketing",
-          description: "EYouth Business certificate for AI-powered content marketing strategies and tools.",
-          image: "images/certificates/EYouth/AI For Content Marketing - Certificate _ EYouth Business.png"
-        },
-        {
-          title: "Digital Marketing Strategy",
-          description: "EYouth Business certificate for digital marketing strategy, planning, and execution.",
-          image: "images/certificates/EYouth/Digital Marketing Strategy - Certificate _ EYouth Business_061735.png"
-        }
-      ]
-    },
-    {
-      name: "HackerRank",
-      logo: "images/hackerrank.svg",
-      certificates: [
-        {
-          title: "Python (Basic) Certificate",
-          description: "HackerRank verified certificate for Python programming fundamentals and problem-solving skills.",
-          image: "images/certificates/HackerRank/python_basic certificate hackerrank.png"
-        }
-      ]
-    },
-    {
-      name: "ITIDA",
-      logo: "images/ititda.jpeg",
-      certificates: [
-        {
-          title: "InnovEgypt - TIEC - ITIDA",
-          description: "InnovEgypt program certificate by TIEC and ITIDA — innovation and entrepreneurship training program.",
-          image: "images/certificates/ITIDA/InnovEgypt - Tiec - ITIDA Certificate.png"
         }
       ]
     },
