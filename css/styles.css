@@ -453,6 +453,11 @@ img {
   }
 }
 
+input,
+textarea {
+  caret-color: #FABD23;
+}
+
 ::selection {
   background-color: #FABD23;
   color: #1c1917;
@@ -508,7 +513,7 @@ img {
   }
 }
 
-#portfolio-logo {
+#portfolio-logo, nav, #Hello-Message {
   user-select: none;
   -webkit-user-drag: none;
 }
