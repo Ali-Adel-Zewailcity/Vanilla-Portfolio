@@ -373,17 +373,48 @@ function setupContactForm() {
   
   form.addEventListener("submit", function(e) {
     e.preventDefault();
-    showToast();
-  });
-  
-  // Social links
-  var socialLinks = document.querySelectorAll(".social-link");
-  for (var i = 0; i < socialLinks.length; i++) {
-    socialLinks[i].addEventListener("click", function(e) {
-      e.preventDefault();
-      showToast();
+    
+    var submitBtn = form.querySelector('button[type="submit"]');
+    var originalBtnText = submitBtn.innerHTML;
+    
+    // Disable button and show loading state
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<i data-lucide="loader-2" class="w-5 h-5 animate-spin"></i> Sending...';
+    if (typeof lucide !== "undefined") lucide.createIcons();
+    
+    var formData = new FormData(form);
+    
+    fetch("https://formspree.io/f/mjgervpd", {
+      method: "POST",
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(function(response) {
+      if (response.ok) {
+        showStatusToast("Message Sent!", "Thanks for reaching out! I'll get back to you soon. 🚀", "success");
+        form.reset();
+      } else {
+        return response.json().then(function(data) {
+          if (Object.hasOwn(data, 'errors')) {
+            showStatusToast("Error", data["errors"].map(function(error) { return error["message"]; }).join(", "), "error");
+          } else {
+            showStatusToast("Error", "Oops! There was a problem sending your message.", "error");
+          }
+        });
+      }
+    })
+    .catch(function(error) {
+      showStatusToast("Error", "Oops! There was a problem sending your message.", "error");
+    })
+    .finally(function() {
+      // Reset button state
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = originalBtnText;
+      if (typeof lucide !== "undefined") lucide.createIcons();
     });
-  }
+  });
 }
 
 // ==================== TOAST ====================
@@ -400,6 +431,60 @@ function showToast() {
   
   setTimeout(function() {
     toast.style.animation = "toast-out 0.3s ease forwards";
+    setTimeout(function() {
+      toast.remove();
+    }, 300);
+  }, 4000);
+}
+
+// ==================== STATUS TOAST ====================
+function showStatusToast(title, description, type) {
+  var container = document.getElementById("toast-container");
+  if (!container) return;
+  
+  // Default values if not provided
+  title = title || "Title";
+  description = description || "Description";
+  type = type || "info"; // info, success, error
+  
+  var icon = "info";
+  var bgColor = "bg-stone-800";
+  var borderColor = "border-amber-700/30";
+  
+  if (type === "success") {
+    icon = "check-circle";
+    bgColor = "bg-green-900/90";
+    borderColor = "border-green-700/50";
+  } else if (type === "error") {
+    icon = "alert-circle";
+    bgColor = "bg-red-900/90";
+    borderColor = "border-red-700/50";
+  }
+  
+  var toast = document.createElement("div");
+  toast.className = "toast mb-2 " + bgColor + " " + borderColor + " border backdrop-blur-md p-4 rounded-lg shadow-lg flex gap-3 min-w-[300px] transform transition-all duration-300 translate-x-full";
+  
+  toast.innerHTML = 
+    '<div class="flex-shrink-0 text-amber-400">' +
+      '<i data-lucide="' + icon + '" class="w-6 h-6"></i>' +
+    '</div>' +
+    '<div>' +
+      '<h4 class="font-semibold text-amber-100">' + title + '</h4>' +
+      '<p class="text-sm text-stone-300">' + description + '</p>' +
+    '</div>';
+  
+  container.appendChild(toast);
+  
+  // Initialize icon for this toast
+  if (typeof lucide !== "undefined") lucide.createIcons();
+  
+  // Animate in
+  requestAnimationFrame(function() {
+    toast.classList.remove("translate-x-full");
+  });
+  
+  setTimeout(function() {
+    toast.classList.add("translate-x-full", "opacity-0");
     setTimeout(function() {
       toast.remove();
     }, 300);

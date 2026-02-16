@@ -13,6 +13,178 @@ body {
   max-width: 100vw;
 }
 
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Logo Animations */
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+  color: #f59e0b;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.logo-wrapper:hover .text-amber-500 {
+  text-shadow: 0 0 10px rgba(245, 158, 11, 0.5);
+}
+
+/* Circuit-style Electron Animation */
+.electron-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 140%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 0;
+  overflow: visible;
+}
+
+/* Circuit paths - clean geometric lines like circuit boards */
+.circuit-path {
+  position: absolute;
+  stroke: rgb(245, 159, 11);
+  fill: none;
+  stroke-width: 1;
+  opacity: 0.5;
+}
+
+.circuit-path-1 {
+  animation: pulse-glow-path 3s ease-in-out infinite;
+}
+
+.circuit-path-2 {
+  animation: pulse-glow-path 3s ease-in-out infinite 1s;
+}
+
+.circuit-path-3 {
+  animation: pulse-glow-path 3s ease-in-out infinite 2s;
+}
+
+/* Electrons - glowing particles traveling clean paths */
+.electron {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: #f59e0b;
+  border-radius: 50%;
+  box-shadow: 
+    0 0 10px #f59e0b,
+    0 0 20px #f59e0b,
+    0 0 30px rgba(245, 158, 11, 0.6);
+}
+
+/* Circuit connection nodes - pulsing dots at intersections */
+.circuit-node {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #fb923cc6;
+  border-radius: 50%;
+  box-shadow: 
+    0 0 8px rgba(251, 146, 60, 0.633),
+    0 0 12px rgba(251, 146, 60, 0.385);
+  animation: node-pulse 2s ease-in-out infinite;
+  top: 50%;
+  left: 50%;
+  
+}
+
+.node-1 { 
+  transform: translate(-60px, -20px);
+  animation-delay: 0s; 
+}
+.node-2 { 
+  transform: translate(0px, -10px);
+  animation-delay: 0.4s; 
+}
+.node-3 { 
+  transform: translate(40px, 5px);
+  animation-delay: 0.8s; 
+}
+.node-4 { 
+  transform: translate(-30px, 20px);
+  animation-delay: 1.2s; 
+}
+
+/* Animations */
+@keyframes electron-move {
+  0% { 
+    offset-distance: 0%;
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  5% { 
+    opacity: 1;
+    transform: scale(1);
+  }
+  95% { 
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% { 
+    offset-distance: 100%;
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+@keyframes pulse-glow-path {
+  0%, 100% { 
+    opacity: 0.3;
+    filter: drop-shadow(0 0 2px rgba(245, 158, 11, 0.4));
+  }
+  50% { 
+    opacity: 0.6;
+    filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.6));
+  }
+}
+
+@keyframes node-pulse {
+  0%, 100% { 
+    transform: translate(var(--x, 0), var(--y, 0)) scale(1);
+    opacity: 0.7;
+  }
+  50% { 
+    transform: translate(var(--x, 0), var(--y, 0)) scale(1.8);
+    opacity: 1;
+    box-shadow: 
+      0 0 12px rgba(251, 146, 60, 1),
+      0 0 20px rgba(251, 146, 60, 0.6);
+  }
+}
+
+/* Optional: Subtle scanning line effect */
+.scan-line {
+  position: absolute;
+  top: 50%;
+  left: -100%;
+  width: 200%;
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent, 
+    transparent 40%,
+    rgba(245, 158, 11, 0.4) 50%, 
+    transparent 60%,
+    transparent);
+  animation: scan-horizontal 5s linear infinite;
+}
+
+@keyframes scan-horizontal {
+  0% { 
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
@@ -281,9 +453,30 @@ body {
   }
 }
 
+::selection {
+  background-color: #FABD23;
+  color: #1c1917;
+}
+
 #experience-timeline ::selection,
 #skills-grid ::selection,
 #projects-grid ::selection,
-#contact-form ::selection {
+#view-projects-button::selection {
   background-color: #111727;
+  color: #FEF3C7
+}
+
+#portfolio-logo ::selection {
+  background-color: #f1ce76;
+  color: #FEF3C7
+}
+
+#portfolio-logo span::selection {
+  background-color: #f1ce76;
+  color: #92400E
+}
+
+#portfolio-logo {
+  user-select: none;
+  -webkit-user-drag: none;
 }

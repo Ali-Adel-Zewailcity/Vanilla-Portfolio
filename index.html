@@ -52,11 +52,32 @@
     >
       <nav class="w-full px-4 py-4">
         <div class="flex items-center justify-between w-full">
-          <a href="#hero">
-            <div
-              class="text-3xl font-bold text-amber-100 cursor-pointer hover:scale-105 transition-transform whitespace-nowrap"
-            >
-              <span class="text-maroon-600">Ali </span>Adel
+          <a href="#hero" id="portfolio-logo">
+            <div class="logo-wrapper relative px-4 py-2 overflow-hidden">
+              <div class="electron-container">
+                <!-- SVG for visible circuit paths (optional - for visual reference) -->
+                <svg style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;" viewBox="-100 -60 200 120" preserveAspectRatio="xMidYMid meet">
+                  <!-- Horizontal path with corners -->
+                  <path class="circuit-path circuit-path-1" 
+                        d="M -100,0 L -20,0 Q -10,0 -10,10 L -10,30 Q -10,40 0,40 L 100,40" />
+                  
+                  <!-- Vertical zigzag -->
+                  <path class="circuit-path circuit-path-2" 
+                        d="M 0,-60 L 0,-20 Q 0,-10 10,-10 L 40,-10 Q 50,-10 50,0 L 50,60" />
+                  
+                  <!-- Diagonal crossing -->
+                  <path class="circuit-path circuit-path-3" 
+                        d="M -80,-40 L -30,-40 Q -20,-40 -15,-35 L 15,0 Q 20,5 30,5 L 80,5" />
+                </svg>
+               
+                <!-- Optional scanning effect -->
+                <div class="scan-line"></div>
+              </div>
+              <div
+                class="text-2xl font-bold font-mono text-amber-100 cursor-pointer hover:scale-105 transition-transform whitespace-nowrap relative z-10"
+              >
+                <span class="text-maroon-600">Ali</span><span class="text-stone-400">.</span>Adel<span class="text-amber-500">()</span><span class="cursor-blink">_</span>
+              </div>
             </div>
           </a>
 
@@ -276,7 +297,7 @@
             class="animate-in flex flex-col sm:flex-row gap-4 justify-center"
           >
             <a
-              href="#projects"
+              href="#projects" id="view-projects-button"
               class="px-8 py-4 bg-gradient-to-r from-amber-700 to-amber-600 text-white rounded-lg font-semibold hover:from-amber-600 hover:to-amber-500 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
               View Projects
@@ -336,11 +357,33 @@
                 problems. I specialize in predictive modeling, natural language
                 processing, and computer vision applications.
               </p>
-              <p class="text-lg leading-relaxed">
-                When I'm not analyzing data, I contribute to open-source
-                projects and share knowledge through technical blogs and
-                workshops.
+            </div>
+            
+            <div class="mt-8 p-6 bg-stone-800/50 border-l-4 border-amber-600 rounded-r-lg">
+              <p class="text-xl italic text-amber-100 font-medium">
+                "When it comes to quality and innovation, I expect nothing less than the extraordinary."
               </p>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 mt-8">
+              <div class="flex items-center gap-4 p-4 bg-stone-800/50 rounded-lg border border-amber-700/30 hover:border-amber-600/60 transition-colors">
+                <div class="p-3 bg-amber-900/30 rounded-lg text-amber-400">
+                  <i data-lucide="folder-git-2" class="w-6 h-6"></i>
+                </div>
+                <div>
+                  <div class="text-2xl font-bold text-amber-100">11+</div>
+                  <div class="text-sm text-stone-400">Projects</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-4 p-4 bg-stone-800/50 rounded-lg border border-amber-700/30 hover:border-amber-600/60 transition-colors">
+                <div class="p-3 bg-amber-900/30 rounded-lg text-amber-400">
+                  <i data-lucide="briefcase" class="w-6 h-6"></i>
+                </div>
+                <div>
+                  <div class="text-2xl font-bold text-amber-100">2+</div>
+                  <div class="text-sm text-stone-400">Years Exp.</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -538,7 +581,7 @@
               </div>
               <div class="space-y-4">
                 <a
-                  href="#"
+                  href="mailto:ali20adel05@gmail.com" target="_blank"
                   class="social-link flex items-center gap-4 text-stone-300 hover:text-amber-400 transition-colors group"
                 >
                   <div
@@ -546,10 +589,10 @@
                   >
                     <i data-lucide="mail" class="w-6 h-6 text-white"></i>
                   </div>
-                  <span class="text-lg">contact@datascientist.com</span>
+                  <span class="text-lg">ali20adel05@gmail.com</span>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/ali-adel-b10449277" target="_blank"
                   class="social-link flex items-center gap-4 text-stone-300 hover:text-amber-400 transition-colors group"
                 >
                   <div
@@ -560,7 +603,7 @@
                   <span class="text-lg">LinkedIn Profile</span>
                 </a>
                 <a
-                  href="#"
+                  href="https://github.com/Ali-Adel-Zewailcity" target="_blank"
                   class="social-link flex items-center gap-4 text-stone-300 hover:text-amber-400 transition-colors group"
                 >
                   <div
@@ -638,11 +681,8 @@
       <div class="container mx-auto px-4">
         <div class="text-center text-stone-400">
           <p class="mb-2">
-            © <span id="current-year"></span> Data Scientist Portfolio. All
+            © <span id="current-year"></span> Ali Adel Portfolio. All
             rights reserved.
-          </p>
-          <p class="text-sm">
-            Built with HTML, TailwindCSS, and Vanilla JavaScript
           </p>
         </div>
       </div>
