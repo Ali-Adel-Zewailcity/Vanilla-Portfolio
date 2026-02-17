@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
   // Render all dynamic content
-  renderProjectsSection();
   renderExperienceSection();
   renderSkillsSection();
   renderCertificatesSection();
@@ -29,104 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
   console.log("=== Portfolio JS Complete ===");
 });
 
-// ==================== PROJECTS ====================
-function renderProjectsSection() {
-  console.log("Rendering projects...");
-
-  var projects = [
-    {
-      title: "Customer Churn Prediction",
-      description:
-        "Machine learning model to predict customer churn with 94% accuracy using ensemble methods and feature engineering.",
-      tags: ["Python", "Scikit-learn", "XGBoost", "SQL"],
-    },
-    {
-      title: "NLP Sentiment Analysis",
-      description:
-        "Deep learning model for multi-class sentiment analysis on social media data using transformers and BERT.",
-      tags: ["PyTorch", "Transformers", "BERT", "NLP"],
-    },
-    {
-      title: "Image Classification System",
-      description:
-        "Computer vision system for automated product classification using convolutional neural networks.",
-      tags: ["TensorFlow", "CNN", "OpenCV", "Keras"],
-    },
-    {
-      title: "Time Series Forecasting",
-      description:
-        "Sales forecasting model using LSTM networks and statistical methods to predict revenue trends.",
-      tags: ["LSTM", "Prophet", "Pandas", "Matplotlib"],
-    },
-    {
-      title: "Recommendation Engine",
-      description:
-        "Collaborative filtering system for personalized product recommendations using matrix factorization.",
-      tags: ["Spark", "ALS", "Redis", "FastAPI"],
-    },
-    {
-      title: "Fraud Detection System",
-      description:
-        "Real-time anomaly detection system for financial transactions using isolation forests and autoencoders.",
-      tags: ["Apache Kafka", "Scikit-learn", "Docker", "PostgreSQL"],
-    },
-  ];
-
-  var container = document.getElementById("projects-grid");
-  if (!container) {
-    console.error("projects-grid not found!");
-    return;
-  }
-
-  var html = "";
-  for (var i = 0; i < projects.length; i++) {
-    var project = projects[i];
-    var tagsHtml = "";
-    for (var j = 0; j < project.tags.length; j++) {
-      tagsHtml +=
-        '<span class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30">' +
-        project.tags[j] +
-        "</span>";
-    }
-
-    html +=
-      '<div class="animate-on-scroll relative group">' +
-      '<div class="absolute inset-0 bg-gradient-to-br from-amber-700/20 to-amber-900/20 rounded-lg transform rotate-1 group-hover:rotate-0 transition-transform duration-300"></div>' +
-      '<div class="project-card relative bg-stone-800/70 backdrop-blur-sm rounded-lg border-2 border-amber-700/30 hover:border-amber-600/60 transition-all duration-300 overflow-hidden">' +
-      '<div class="relative h-48 overflow-hidden">' +
-      '<img alt="' +
-      project.title +
-      '" class="project-image w-full h-full object-cover" src="https://images.unsplash.com/photo-1572177812156-58036aae439c">' +
-      '<div class="absolute inset-0 bg-gradient-to-t from-stone-900 to-transparent"></div>' +
-      "</div>" +
-      '<div class="p-6">' +
-      '<h3 class="text-xl font-semibold text-amber-100 mb-3">' +
-      project.title +
-      "</h3>" +
-      '<p class="text-stone-300 mb-4">' +
-      project.description +
-      "</p>" +
-      '<div class="flex flex-wrap gap-2 mb-4">' +
-      tagsHtml +
-      "</div>" +
-      '<div class="flex gap-4">' +
-      '<a href="javascript:void(0)" onclick="showToast()" class="flex items-center gap-2 text-amber-400 hover:text-amber-300 transition-colors">' +
-      '<i data-lucide="github" class="w-4 h-4"></i>' +
-      "<span>Code</span>" +
-      "</a>" +
-      '<a href="javascript:void(0)" onclick="showToast()" class="flex items-center gap-2 text-amber-400 hover:text-amber-300 transition-colors">' +
-      '<i data-lucide="external-link" class="w-4 h-4"></i>' +
-      "<span>Demo</span>" +
-      "</a>" +
-      "</div>" +
-      "</div>" +
-      "</div>" +
-      "</div>";
-  }
-
-  container.innerHTML = html;
-  console.log("Projects rendered: " + projects.length);
-}
 
 // ==================== EXPERIENCE ====================
 function renderExperienceSection() {
@@ -954,26 +855,7 @@ function setupContactForm() {
   });
 }
 
-// ==================== TOAST ====================
-function showToast() {
-  var container = document.getElementById("toast-container");
-  if (!container) return;
 
-  var toast = document.createElement("div");
-  toast.className = "toast mb-2";
-  toast.innerHTML =
-    '<div class="toast-title">🚧 Feature Not Implemented</div>' +
-    "<div class=\"toast-description\">This feature isn't implemented yet—but don't worry! You can request it in your next prompt! 🚀</div>";
-
-  container.appendChild(toast);
-
-  setTimeout(function () {
-    toast.style.animation = "toast-out 0.3s ease forwards";
-    setTimeout(function () {
-      toast.remove();
-    }, 300);
-  }, 4000);
-}
 
 // ==================== STATUS TOAST ====================
 function showStatusToast(title, description, type) {

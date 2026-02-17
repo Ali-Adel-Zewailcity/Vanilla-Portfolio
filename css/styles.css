@@ -472,6 +472,28 @@ img {
   background: linear-gradient(to bottom, #b45309, transparent);
 }
 
+/* Project card equal height in grid rows */
+#projects-grid > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#projects-grid .project-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#projects-grid .project-card > .p-6 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#projects-grid .project-card > .p-6 > .flex.gap-4:last-child {
+  margin-top: auto;
+}
+
 /* Project card image hover */
 .project-image {
   transition: transform 0.5s ease;
