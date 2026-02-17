@@ -40,7 +40,10 @@
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 
     <!-- Devicon - Technology SVG Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/styles.css" />
@@ -59,27 +62,47 @@
             <div class="logo-wrapper relative px-4 py-2 overflow-hidden">
               <div class="electron-container">
                 <!-- SVG for visible circuit paths (optional - for visual reference) -->
-                <svg style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;" viewBox="-100 -60 200 120" preserveAspectRatio="xMidYMid meet">
+                <svg
+                  style="
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                  "
+                  viewBox="-100 -60 200 120"
+                  preserveAspectRatio="xMidYMid meet"
+                >
                   <!-- Horizontal path with corners -->
-                  <path class="circuit-path circuit-path-1" 
-                        d="M -100,0 L -20,0 Q -10,0 -10,10 L -10,30 Q -10,40 0,40 L 100,40" />
-                  
+                  <path
+                    class="circuit-path circuit-path-1"
+                    d="M -100,0 L -20,0 Q -10,0 -10,10 L -10,30 Q -10,40 0,40 L 100,40"
+                  />
+
                   <!-- Vertical zigzag -->
-                  <path class="circuit-path circuit-path-2" 
-                        d="M 0,-60 L 0,-20 Q 0,-10 10,-10 L 40,-10 Q 50,-10 50,0 L 50,60" />
-                  
+                  <path
+                    class="circuit-path circuit-path-2"
+                    d="M 0,-60 L 0,-20 Q 0,-10 10,-10 L 40,-10 Q 50,-10 50,0 L 50,60"
+                  />
+
                   <!-- Diagonal crossing -->
-                  <path class="circuit-path circuit-path-3" 
-                        d="M -80,-40 L -30,-40 Q -20,-40 -15,-35 L 15,0 Q 20,5 30,5 L 80,5" />
+                  <path
+                    class="circuit-path circuit-path-3"
+                    d="M -80,-40 L -30,-40 Q -20,-40 -15,-35 L 15,0 Q 20,5 30,5 L 80,5"
+                  />
                 </svg>
-               
+
                 <!-- Optional scanning effect -->
                 <div class="scan-line"></div>
               </div>
               <div
                 class="text-2xl font-bold font-mono text-amber-100 cursor-pointer hover:scale-105 transition-transform whitespace-nowrap relative z-10"
               >
-                <span class="text-maroon-600">Ali</span><span class="text-stone-400">.</span>Adel<span class="text-amber-500">()</span><span class="cursor-blink">_</span>
+                <span class="text-maroon-600">Ali</span
+                ><span class="text-stone-400">.</span>Adel<span
+                  class="text-amber-500"
+                  >()</span
+                ><span class="cursor-blink">_</span>
               </div>
             </div>
           </a>
@@ -296,9 +319,18 @@
       <div class="container mx-auto px-4 py-20 relative z-10">
         <div class="max-w-4xl mx-auto text-center">
           <div class="animate-in mb-8">
-            <div class="inline-flex items-center gap-2 px-5 py-2 mb-6 rounded-full border border-amber-700/40 bg-amber-900/20 backdrop-blur-sm" id="Hello-Message">
+            <div
+              class="inline-flex items-center gap-2 px-5 py-2 mb-6 rounded-full border border-amber-700/40 bg-amber-900/20 backdrop-blur-sm"
+              id="Hello-Message"
+            >
               <span class="text-2xl animate-wave inline-block">👋</span>
-              <span class="text-lg md:text-xl font-medium text-stone-300">Hello, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-amber-300 font-semibold">Ali Adel</span></span>
+              <span class="text-lg md:text-xl font-medium text-stone-300"
+                >Hello, I'm
+                <span
+                  class="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-amber-300 font-semibold"
+                  >Ali Adel</span
+                ></span
+              >
             </div>
             <h1 class="text-5xl md:text-7xl font-bold mb-6 text-amber-100">
               Data Scientist &<br />
@@ -318,7 +350,8 @@
             class="animate-in flex flex-col sm:flex-row gap-4 justify-center"
           >
             <a
-              href="#projects" id="view-projects-button"
+              href="#projects"
+              id="view-projects-button"
               class="px-8 py-4 bg-gradient-to-r from-amber-700 to-amber-600 text-white rounded-lg font-semibold hover:from-amber-600 hover:to-amber-500 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
               View Projects
@@ -379,15 +412,20 @@
                 processing, and computer vision applications.
               </p>
             </div>
-            
-            <div class="mt-8 p-6 bg-stone-800/50 border-l-4 border-amber-600 rounded-r-lg">
+
+            <div
+              class="mt-8 p-6 bg-stone-800/50 border-l-4 border-amber-600 rounded-r-lg"
+            >
               <p class="text-xl italic text-amber-100 font-medium">
-                "When it comes to quality and innovation, I expect nothing less than the extraordinary."
+                "When it comes to quality and innovation, I expect nothing less
+                than the extraordinary."
               </p>
             </div>
 
             <div class="grid grid-cols-2 gap-4 mt-8">
-              <div class="flex items-center gap-4 p-4 bg-stone-800/50 rounded-lg border border-amber-700/30 hover:border-amber-600/60 transition-colors">
+              <div
+                class="flex items-center gap-4 p-4 bg-stone-800/50 rounded-lg border border-amber-700/30 hover:border-amber-600/60 transition-colors"
+              >
                 <div class="p-3 bg-amber-900/30 rounded-lg text-amber-400">
                   <i data-lucide="folder-git-2" class="w-6 h-6"></i>
                 </div>
@@ -396,7 +434,9 @@
                   <div class="text-sm text-stone-400">Projects</div>
                 </div>
               </div>
-              <div class="flex items-center gap-4 p-4 bg-stone-800/50 rounded-lg border border-amber-700/30 hover:border-amber-600/60 transition-colors">
+              <div
+                class="flex items-center gap-4 p-4 bg-stone-800/50 rounded-lg border border-amber-700/30 hover:border-amber-600/60 transition-colors"
+              >
                 <div class="p-3 bg-amber-900/30 rounded-lg text-amber-400">
                   <i data-lucide="briefcase" class="w-6 h-6"></i>
                 </div>
@@ -540,24 +580,69 @@
           >
             <!-- Project 1: Media Files Manager -->
             <div class="animate-on-scroll relative group">
-              <div class="absolute inset-0 bg-gradient-to-br from-amber-700/20 to-amber-900/20 rounded-lg transform rotate-1 group-hover:rotate-0 transition-transform duration-300"></div>
-              <div class="project-card relative bg-stone-800/70 backdrop-blur-sm rounded-lg border-2 border-amber-700/30 hover:border-amber-600/60 transition-all duration-300 overflow-hidden">
-                <div class="relative h-48 overflow-hidden">
-                  <img alt="Media Files Manager" class="project-image w-full h-full object-cover" src="images/Porjects/Media Files Manager.png">
-                  <div class="absolute inset-0 bg-gradient-to-t from-stone-900 to-transparent"></div>
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-amber-700/20 to-amber-900/20 rounded-lg transform rotate-1 group-hover:rotate-0 transition-transform duration-300"
+              ></div>
+              <div
+                class="project-card relative bg-stone-800/70 backdrop-blur-sm rounded-lg border-2 border-amber-700/30 hover:border-amber-600/60 transition-all duration-300 overflow-hidden"
+              >
+                <div
+                  class="relative overflow-hidden project-img-wrapper"
+                  data-project="Media Files Manager"
+                >
+                  <img
+                    alt="Media Files Manager"
+                    class="project-image w-full h-full object-cover"
+                    src="images/Porjects/Media Files Manager.png"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-stone-900 to-transparent"
+                  ></div>
+                  <div class="project-gallery-hint">
+                    <div class="project-gallery-hint-icon">
+                      <i data-lucide="images" class="w-5 h-5"></i>
+                    </div>
+                  </div>
                 </div>
                 <div class="p-6">
-                  <h3 class="text-xl font-semibold text-amber-100 mb-3">Media Files Manager</h3>
-                  <p class="text-stone-300 mb-4">Media Files Manager is a sophisticated, all-in-one desktop utility built with Python and PyQt6. It streamlines complex media operations—such as downloading high-quality videos, manipulating PDFs, editing media metadata, and manipulating video, audio and image files</p>
+                  <h3 class="text-xl font-semibold text-amber-100 mb-3">
+                    Media Files Manager
+                  </h3>
+                  <p class="text-stone-300 mb-4">
+                    Media Files Manager is a sophisticated, all-in-one desktop
+                    utility built with Python and PyQt6. It streamlines complex
+                    media operations—such as downloading high-quality videos,
+                    manipulating PDFs, editing media metadata, and manipulating
+                    video, audio and image files
+                  </p>
                   <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30">FFMPEG</span>
-                    <span class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30">Python</span>
-                    <span class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30">PyQT6</span>
-                    <span class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30">Yt-dlp</span>
-                    <span class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30">LaTex</span>
+                    <span
+                      class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30"
+                      >FFMPEG</span
+                    >
+                    <span
+                      class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30"
+                      >Python</span
+                    >
+                    <span
+                      class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30"
+                      >PyQT6</span
+                    >
+                    <span
+                      class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30"
+                      >Yt-dlp</span
+                    >
+                    <span
+                      class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30"
+                      >LaTex</span
+                    >
                   </div>
                   <div class="flex gap-4">
-                    <a href="https://github.com/Ali-Adel-Zewailcity/QT6-GUI-Desktop-Application" target="_blank" class="flex items-center gap-2 text-amber-400 hover:text-amber-300 transition-colors">
+                    <a
+                      href="https://github.com/Ali-Adel-Zewailcity/QT6-GUI-Desktop-Application"
+                      target="_blank"
+                      class="flex items-center gap-2 text-amber-400 hover:text-amber-300 transition-colors"
+                    >
                       <i data-lucide="github" class="w-4 h-4"></i>
                       <span>Code</span>
                     </a>
@@ -572,31 +657,85 @@
 
             <!-- Project 2: Information Retrieval System -->
             <div class="animate-on-scroll relative group">
-              <div class="absolute inset-0 bg-gradient-to-br from-amber-700/20 to-amber-900/20 rounded-lg transform rotate-1 group-hover:rotate-0 transition-transform duration-300"></div>
-              <div class="project-card relative bg-stone-800/70 backdrop-blur-sm rounded-lg border-2 border-amber-700/30 hover:border-amber-600/60 transition-all duration-300 overflow-hidden">
-                <div class="relative h-48 overflow-hidden">
-                  <img alt="Information Retrieval System" class="project-image w-full h-full object-cover" src="images/Porjects/Information Retrieval System.png">
-                  <div class="absolute inset-0 bg-gradient-to-t from-stone-900 to-transparent"></div>
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-amber-700/20 to-amber-900/20 rounded-lg transform rotate-1 group-hover:rotate-0 transition-transform duration-300"
+              ></div>
+              <div
+                class="project-card relative bg-stone-800/70 backdrop-blur-sm rounded-lg border-2 border-amber-700/30 hover:border-amber-600/60 transition-all duration-300 overflow-hidden"
+              >
+                <div
+                  class="relative overflow-hidden project-img-wrapper"
+                  data-project="Information Retrieval System"
+                >
+                  <img
+                    alt="Information Retrieval System"
+                    class="project-image w-full h-full object-cover"
+                    src="images/Porjects/Information Retrieval System.png"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-stone-900 to-transparent"
+                  ></div>
+                  <div class="project-gallery-hint">
+                    <div class="project-gallery-hint-icon">
+                      <i data-lucide="images" class="w-5 h-5"></i>
+                    </div>
+                  </div>
                 </div>
                 <div class="p-6">
-                  <h3 class="text-xl font-semibold text-amber-100 mb-3">Information Retrieval System</h3>
-                  <p class="text-stone-300 mb-4">Information retrieval system that enables users to search a curated web corpus using classical IR algorithms. It supports BM25 and TF-IDF ranking methods, both with and without query expansion via WordNet synonyms. Presented through a clean, compact Gradio interface</p>
+                  <h3 class="text-xl font-semibold text-amber-100 mb-3">
+                    Information Retrieval System
+                  </h3>
+                  <p class="text-stone-300 mb-4">
+                    Information retrieval system that enables users to search a
+                    curated web corpus using classical IR algorithms. It
+                    supports BM25 and TF-IDF ranking methods, both with and
+                    without query expansion via WordNet synonyms. Presented
+                    through a clean, compact Gradio interface
+                  </p>
                   <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30">TF-IDF</span>
-                    <span class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30">Query Expansion</span>
-                    <span class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30">WordNet</span>
-                    <span class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30">Web Crawler</span>
-                    <span class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30">Gradio</span>
-                    <span class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30">Python</span>
-                    <span class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30">BM25</span>
-                    <span class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30">NLP</span>
+                    <span
+                      class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30"
+                      >TF-IDF</span
+                    >
+                    <span
+                      class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30"
+                      >Query Expansion</span
+                    >
+                    <span
+                      class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30"
+                      >WordNet</span
+                    >
+                    <span
+                      class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30"
+                      >Web Crawler</span
+                    >
+                    <span
+                      class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30"
+                      >Gradio</span
+                    >
+                    <span
+                      class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30"
+                      >Python</span
+                    >
+                    <span
+                      class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30"
+                      >BM25</span
+                    >
+                    <span
+                      class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30"
+                      >NLP</span
+                    >
                   </div>
                   <div class="flex gap-4">
                     <!-- <a href="https://google.com" target="_blank" class="flex items-center gap-2 text-amber-400 hover:text-amber-300 transition-colors">
                       <i data-lucide="github" class="w-4 h-4"></i>
                       <span>Code</span>
                     </a> -->
-                    <a href="https://google.com" target="_blank" class="flex items-center gap-2 text-amber-400 hover:text-amber-300 transition-colors">
+                    <a
+                      href="https://6d2ee28488a6d621d4.gradio.live/"
+                      target="_blank"
+                      class="flex items-center gap-2 text-amber-400 hover:text-amber-300 transition-colors"
+                    >
                       <i data-lucide="external-link" class="w-4 h-4"></i>
                       <span>Demo</span>
                     </a>
@@ -607,24 +746,68 @@
 
             <!-- Project 3: Delivery Robot Path Planning -->
             <div class="animate-on-scroll relative group">
-              <div class="absolute inset-0 bg-gradient-to-br from-amber-700/20 to-amber-900/20 rounded-lg transform rotate-1 group-hover:rotate-0 transition-transform duration-300"></div>
-              <div class="project-card relative bg-stone-800/70 backdrop-blur-sm rounded-lg border-2 border-amber-700/30 hover:border-amber-600/60 transition-all duration-300 overflow-hidden">
-                <div class="relative h-48 overflow-hidden">
-                  <img alt="Delivery Robot Path Planning" class="project-image w-full h-full object-cover" src="images/Porjects/Delivery Robot Path Planning.png">
-                  <div class="absolute inset-0 bg-gradient-to-t from-stone-900 to-transparent"></div>
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-amber-700/20 to-amber-900/20 rounded-lg transform rotate-1 group-hover:rotate-0 transition-transform duration-300"
+              ></div>
+              <div
+                class="project-card relative bg-stone-800/70 backdrop-blur-sm rounded-lg border-2 border-amber-700/30 hover:border-amber-600/60 transition-all duration-300 overflow-hidden"
+              >
+                <div
+                  class="relative overflow-hidden project-img-wrapper"
+                  data-project="Delivery Robot Path Planning"
+                >
+                  <img
+                    alt="Delivery Robot Path Planning"
+                    class="project-image w-full h-full object-cover"
+                    src="images/Porjects/Delivery Robot Path Planning.png"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-stone-900 to-transparent"
+                  ></div>
+                  <div class="project-gallery-hint">
+                    <div class="project-gallery-hint-icon">
+                      <i data-lucide="images" class="w-5 h-5"></i>
+                    </div>
+                  </div>
                 </div>
                 <div class="p-6">
-                  <h3 class="text-xl font-semibold text-amber-100 mb-3">Delivery Robot Path Planning</h3>
-                  <p class="text-stone-300 mb-4">Autonomous navigation system using Q-Learning to guide a robot through a grid while avoiding obstacles. It includes a performance comparison of classical search algorithms like A*, BFS, Hill Climbing and Simulated Annealing</p>
+                  <h3 class="text-xl font-semibold text-amber-100 mb-3">
+                    Delivery Robot Path Planning
+                  </h3>
+                  <p class="text-stone-300 mb-4">
+                    Autonomous navigation system using Q-Learning to guide a
+                    robot through a grid while avoiding obstacles. It includes a
+                    performance comparison of classical search algorithms like
+                    A*, BFS, Hill Climbing and Simulated Annealing
+                  </p>
                   <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30">Python</span>
-                    <span class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30">Q-Learning</span>
-                    <span class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30">Search Algorithms</span>
-                    <span class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30">Genetic Algorithm</span>
-                    <span class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30">Matplotlib</span>
+                    <span
+                      class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30"
+                      >Python</span
+                    >
+                    <span
+                      class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30"
+                      >Q-Learning</span
+                    >
+                    <span
+                      class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30"
+                      >Search Algorithms</span
+                    >
+                    <span
+                      class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30"
+                      >Genetic Algorithm</span
+                    >
+                    <span
+                      class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30"
+                      >Matplotlib</span
+                    >
                   </div>
                   <div class="flex gap-4">
-                    <a href="https://github.com/Ali-Adel-Zewailcity/Delivery-Robot-Path-Planning" target="_blank" class="flex items-center gap-2 text-amber-400 hover:text-amber-300 transition-colors">
+                    <a
+                      href="https://github.com/Ali-Adel-Zewailcity/Delivery-Robot-Path-Planning"
+                      target="_blank"
+                      class="flex items-center gap-2 text-amber-400 hover:text-amber-300 transition-colors"
+                    >
                       <i data-lucide="github" class="w-4 h-4"></i>
                       <span>Code</span>
                     </a>
@@ -639,26 +822,70 @@
 
             <!-- Project 4: Movie Search Engine -->
             <div class="animate-on-scroll relative group">
-              <div class="absolute inset-0 bg-gradient-to-br from-amber-700/20 to-amber-900/20 rounded-lg transform rotate-1 group-hover:rotate-0 transition-transform duration-300"></div>
-              <div class="project-card relative bg-stone-800/70 backdrop-blur-sm rounded-lg border-2 border-amber-700/30 hover:border-amber-600/60 transition-all duration-300 overflow-hidden">
-                <div class="relative h-48 overflow-hidden">
-                  <img alt="Movie Search Engine" class="project-image w-full h-full object-cover" src="images/Porjects/Movie Serach Engine.png">
-                  <div class="absolute inset-0 bg-gradient-to-t from-stone-900 to-transparent"></div>
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-amber-700/20 to-amber-900/20 rounded-lg transform rotate-1 group-hover:rotate-0 transition-transform duration-300"
+              ></div>
+              <div
+                class="project-card relative bg-stone-800/70 backdrop-blur-sm rounded-lg border-2 border-amber-700/30 hover:border-amber-600/60 transition-all duration-300 overflow-hidden"
+              >
+                <div
+                  class="relative overflow-hidden project-img-wrapper"
+                  data-project="Movie Serach Engine"
+                >
+                  <img
+                    alt="Movie Search Engine"
+                    class="project-image w-full h-full object-cover"
+                    src="images/Porjects/Movie Serach Engine.png"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-stone-900 to-transparent"
+                  ></div>
+                  <div class="project-gallery-hint">
+                    <div class="project-gallery-hint-icon">
+                      <i data-lucide="images" class="w-5 h-5"></i>
+                    </div>
+                  </div>
                 </div>
                 <div class="p-6">
-                  <h3 class="text-xl font-semibold text-amber-100 mb-3">Movie Search Engine</h3>
-                  <p class="text-stone-300 mb-4">A comprehensive web-based application designed to demonstrate various string matching algorithms. This project showcases the practical implementation of algorithms like Naive, Knuth-Morris-Pratt (KMP), Rabin-Karp, and Boyer-Moore-Horspool in real-world scenarios such as movie database querying</p>
+                  <h3 class="text-xl font-semibold text-amber-100 mb-3">
+                    Movie Search Engine
+                  </h3>
+                  <p class="text-stone-300 mb-4">
+                    A comprehensive web-based application designed to
+                    demonstrate various string matching algorithms. This project
+                    showcases the practical implementation of algorithms like
+                    Naive, Knuth-Morris-Pratt (KMP), Rabin-Karp, and
+                    Boyer-Moore-Horspool in real-world scenarios such as movie
+                    database querying
+                  </p>
                   <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30">C++</span>
-                    <span class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30">HTML/CSS & JS</span>
-                    <span class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30">String Matching Algorithms</span>
+                    <span
+                      class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30"
+                      >C++</span
+                    >
+                    <span
+                      class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30"
+                      >HTML/CSS & JS</span
+                    >
+                    <span
+                      class="px-3 py-1 bg-amber-900/30 text-amber-300 text-sm rounded-full border border-amber-700/30"
+                      >String Matching Algorithms</span
+                    >
                   </div>
                   <div class="flex gap-4">
-                    <a href="https://github.com/Ali-Adel-Zewailcity/INSTANT-SOFTWARE-SOLUTIONS" target="_blank" class="flex items-center gap-2 text-amber-400 hover:text-amber-300 transition-colors">
+                    <a
+                      href="https://github.com/Ali-Adel-Zewailcity/INSTANT-SOFTWARE-SOLUTIONS"
+                      target="_blank"
+                      class="flex items-center gap-2 text-amber-400 hover:text-amber-300 transition-colors"
+                    >
                       <i data-lucide="github" class="w-4 h-4"></i>
                       <span>Code</span>
                     </a>
-                    <a href="https://ali-adel-zewailcity.github.io/INSTANT-SOFTWARE-SOLUTIONS/" target="_blank" class="flex items-center gap-2 text-amber-400 hover:text-amber-300 transition-colors">
+                    <a
+                      href="https://ali-adel-zewailcity.github.io/INSTANT-SOFTWARE-SOLUTIONS/"
+                      target="_blank"
+                      class="flex items-center gap-2 text-amber-400 hover:text-amber-300 transition-colors"
+                    >
                       <i data-lucide="external-link" class="w-4 h-4"></i>
                       <span>Demo</span>
                     </a>
@@ -733,6 +960,26 @@
       </div>
     </section>
 
+    <!-- Project Gallery Modal -->
+    <div id="proj-modal" class="proj-modal-overlay" style="display: none">
+      <div class="proj-modal-backdrop"></div>
+      <div class="proj-modal-content">
+        <button class="proj-modal-close" id="proj-modal-close">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+        <button class="proj-modal-arrow proj-modal-prev" id="proj-modal-prev">
+          <i data-lucide="chevron-left" class="w-8 h-8"></i>
+        </button>
+        <div class="proj-modal-body">
+          <img id="proj-modal-img" class="proj-modal-image" src="" alt="" />
+          <span id="proj-modal-counter" class="proj-modal-counter"></span>
+        </div>
+        <button class="proj-modal-arrow proj-modal-next" id="proj-modal-next">
+          <i data-lucide="chevron-right" class="w-8 h-8"></i>
+        </button>
+      </div>
+    </div>
+
     <!-- Certificates Section -->
     <section id="certificates" class="py-20 relative bg-stone-900/30">
       <div class="container mx-auto px-4">
@@ -753,7 +1000,7 @@
     </section>
 
     <!-- Certificate Lightbox Modal -->
-    <div id="cert-modal" class="cert-modal-overlay" style="display:none;">
+    <div id="cert-modal" class="cert-modal-overlay" style="display: none">
       <div class="cert-modal-backdrop"></div>
       <div class="cert-modal-content">
         <button class="cert-modal-close" id="cert-modal-close">
@@ -832,7 +1079,8 @@
               </div>
               <div class="space-y-4">
                 <a
-                  href="mailto:ali20adel05@gmail.com" target="_blank"
+                  href="mailto:ali20adel05@gmail.com"
+                  target="_blank"
                   class="social-link flex items-center gap-4 text-stone-300 hover:text-amber-400 transition-colors group"
                 >
                   <div
@@ -843,7 +1091,8 @@
                   <span class="text-lg">ali20adel05@gmail.com</span>
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/ali-adel-b10449277" target="_blank"
+                  href="https://www.linkedin.com/in/ali-adel-b10449277"
+                  target="_blank"
                   class="social-link flex items-center gap-4 text-stone-300 hover:text-amber-400 transition-colors group"
                 >
                   <div
@@ -854,7 +1103,8 @@
                   <span class="text-lg">LinkedIn Profile</span>
                 </a>
                 <a
-                  href="https://github.com/Ali-Adel-Zewailcity" target="_blank"
+                  href="https://github.com/Ali-Adel-Zewailcity"
+                  target="_blank"
                   class="social-link flex items-center gap-4 text-stone-300 hover:text-amber-400 transition-colors group"
                 >
                   <div
@@ -934,8 +1184,8 @@
       <div class="container mx-auto px-4">
         <div class="text-center text-stone-400">
           <p class="mb-2">
-            © <span id="current-year"></span> Ali Adel Portfolio. All
-            rights reserved.
+            © <span id="current-year"></span> Ali Adel Portfolio. All rights
+            reserved.
           </p>
         </div>
       </div>
