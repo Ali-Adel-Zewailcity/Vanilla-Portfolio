@@ -699,24 +699,24 @@ var projGalleryState = { images: [], currentIndex: 0, projectName: "" };
 
 var projectGalleryData = {
   "Media Files Manager": [
-    "images/Porjects/Media Files Manager/img_0.png",
+    "images/Porjects/Media Files Manager/img_0.jpg",
     "images/Porjects/Media Files Manager/img_1.png",
     "images/Porjects/Media Files Manager/img_2.png",
     "images/Porjects/Media Files Manager/img_3.png"
   ],
   "Information Retrieval System": [
-    "images/Porjects/Information Retrieval System/img_0.png"
+    "images/Porjects/Information Retrieval System/img_0.jpg"
   ],
   "Delivery Robot Path Planning": [
-    "images/Porjects/Delivery Robot Path Planning/img_0.png",
+    "images/Porjects/Delivery Robot Path Planning/img_0.jpg",
     "images/Porjects/Delivery Robot Path Planning/img_1.png",
     "images/Porjects/Delivery Robot Path Planning/img_2.png",
     "images/Porjects/Delivery Robot Path Planning/img_3.png"
   ],
   "Movie Serach Engine": [
-    "images/Porjects/Movie Serach Engine/img_0.png",
-    "images/Porjects/Movie Serach Engine/img_1 (2).png",
-    "images/Porjects/Movie Serach Engine/img_2.png"
+    "images/Porjects/Movie Serach Engine/img_0.jpg",
+    "images/Porjects/Movie Serach Engine/img_1.jpg",
+    "images/Porjects/Movie Serach Engine/img_2.jpg"
   ]
 };
 
