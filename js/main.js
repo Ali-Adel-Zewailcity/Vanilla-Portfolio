@@ -333,6 +333,13 @@ function renderCertificatesSection() {
           image:
             "images/certificates/ITIDA/InnovEgypt - Tiec - ITIDA Certificate.png",
         },
+        {
+          title: "ITIDA - GIGs | Freelance Training Program",
+          description:
+            "Freelance Training Program certificate by ITIDA and eYouth",
+          image:
+            "images/certificates/ITIDA/ITITDA + GIGS.jpg",
+        },
       ],
     },
     {
@@ -419,6 +426,13 @@ function renderCertificatesSection() {
       icon: "award",
       logo: null,
       certificates: [
+        {
+          title: "IoT Workshop",
+          description:
+            "Sector B5 IoT Workshop certificate covering IoT fundamentals, networking protocols, and hardware firmware building.",
+          image:
+            "images/certificates/Others/Sector B5 IoT.png",
+        },
         {
           title: "Azure AI Fundamentals Workshop",
           description:
