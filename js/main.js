@@ -181,7 +181,7 @@ function renderSkillsSection() {
         "Microsoft 365",
         "VS Code",
         "Docker",
-        "Kubernetes",
+        // "Kubernetes",
       ],
     },
     {
@@ -251,7 +251,7 @@ function renderSkillsSection() {
     "Microsoft 365": "devicon-windows11-original colored",
     "VS Code": "devicon-vscode-plain colored",
     "Docker": "devicon-docker-plain colored",
-    "Kubernetes": "devicon-kubernetes-plain colored",
+    // "Kubernetes": "devicon-kubernetes-plain colored",
   };
 
   // Helper to render a skill card
